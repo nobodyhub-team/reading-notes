@@ -14,4 +14,4 @@
     - 纵向拆分: 讲一个大应用拆分为多个小应用
     - 横向拆分: 将服用的业务拆分出来, 独立部署分布式服务
     
-    
+[Home](README.md), [Previous](chapter-6-永无止境.md), [Next](chapter-8-固若金汤.md)

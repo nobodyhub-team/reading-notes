@@ -7,3 +7,4 @@
 ### [Chapter 5: 万无一失: 网站的高可用框架](chapter-5-万无一失.md)
 ### [Chapter 6: 永无止境: 网站的伸缩性框架](chapter-6-永无止境.md)
 ### [Chapter 7: 随机应变: 网站的可扩展架构](chapter-7-随机应变.md)
+### [Chapter 8: 固若金汤: 网站的安全架构](chapter-8-固若金汤.md)
