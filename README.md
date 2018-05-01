@@ -6,3 +6,4 @@
 ### [Chapter 4: 瞬时响应: 网站的高性能架构](chapter-4-瞬时响应.md)
 ### [Chapter 5: 万无一失: 网站的高可用框架](chapter-5-万无一失.md)
 ### [Chapter 6: 永无止境: 网站的伸缩性框架](chapter-6-永无止境.md)
+### [Chapter 7: 随机应变: 网站的可扩展架构](chapter-7-随机应变.md)
