@@ -11,3 +11,5 @@ which is used to guide the design of all aspects of large-scale software systems
 * 伸缩性(Scalability)
 * 扩展性(Extensibility)
 * 安全性(Security)
+
+[Home](README.md), [Previous](chapter-2-大型网站架构模式.md), [Next](chapter-4-瞬时响应.md)

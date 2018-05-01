@@ -37,4 +37,5 @@ Each pattern describes a problem that recurs constantly around us and the core o
     - 自动化降级
     - 自动化分配资源
 * 安全
-    
+
+[Home](README.md), [Previous](chapter-1-概述.md), [Next](chapter-3-大型网站核心要素.md)

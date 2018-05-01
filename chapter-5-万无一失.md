@@ -46,3 +46,5 @@ CAP原理认为, 一个提供数据服务的存储系统无法同时满足一下
 * 数据一致性(Consistency), 所有应用程序都能访问得到相同的数据
 * 数据可用性(Availability), 任何时候, 任何应用程序都可以读写访问
 * 分区耐受性(Partition Tolerance), 系统具有跨网络分区的伸缩性
+
+[Home](README.md), [Previous](chapter-4-瞬时响应.md), [Next](chapter-6-永无止境.md)
