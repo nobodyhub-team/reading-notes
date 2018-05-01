@@ -1,4 +1,4 @@
-# Chapter 4: 瞬时响应
+# Chapter 4: 瞬时响应: 网站的高性能架构
 
 ## 性能测试指标
 * 响应时间(Response Time)
