@@ -1,4 +1,5 @@
 # Java Design Patterns
 
 ### [Introduction to Design Patterns](1-introduction.md)
-### [Adapter Design Pattern](2-adapter.md)
+### [Structural Patterns](2-structural.md)
+### [Creational Patterns](3-creational.md)
