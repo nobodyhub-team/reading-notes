@@ -62,3 +62,28 @@ It puts an abstraction and implementation into two different class hierarchies s
 *  Changes in the implementation of an abstraction should have no impact on clients; that is the code should not have to be recompiled
 * You want to share an implementation among multiple objects(perhaps using reference counting), and this fact should be hidden from the client.
 
+## Proxy Design Pattern
+The Proxy Pattern is used to create a representative object that controls access to another object, 
+which may be remote, expensive to creator in need of being secured.
+
+One reason fo controlling access to an object is to defer the full cost of its creation and initialization
+until we actually need to use it. Another reason could be to act as a local representative for an object that lives in a 
+different JVM. The Proxy can be very useful in controlling the access to the original object, 
+especially when objects should have different access rights.
+ 
+### When to use the Proxy Pattern
+* Remote Proxy: A remote proxy provides a local representative for an object in a different address space
+* Virtual Proxy: A virtual proxy provides expensive objects on demand
+* Protection Proxy: A protection proxy controls access to the original object. Protection proxies are useful when objects
+    should have different access right.
+* Cache Proxy/Server Proxy: To provide the functionality required to store the results of most frequently used target operation.
+* Firewall Proxy: To protect target objects from bad client or prevent clients from accessing harmful targets.
+* Synchronization Proxy: To provide the required functionality to allow safe concurrent accesses to a target object by different
+    client object.
+* Smart Reference Proxy: To provide functionality to prevent the accidental disposal/deletion of the target
+    object when there are clients currently with references to it.
+* Counting Proxy: To provide some kind of audit mechanism before executing a method on the target object.
+
+### Proxy Pattern in JDK
+* java.lang.reflect.Proxy
+* java.rmi.* (whole package)

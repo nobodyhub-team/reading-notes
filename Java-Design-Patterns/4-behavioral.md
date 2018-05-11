@@ -32,3 +32,9 @@ Rather than interacting directly with each other, objects ask the Mediator to in
     unstructured an difficult to understand.
 * Reusing an object is difficult because it refers to and communicates with many other objects.
 * A behavior that's described between several classes should be customizable without a lot of sub-classing.
+
+### Mediator Pattern in JDK
+* java.util.concurrent.ScheduledExecutorService (all scheduleXXX() methods) 
+* java.util.concurrent.ExecutorService (the invokeXXX() and submit() methods) • java.util.concurrent.Executor#execute()
+* java.util.Timer (all scheduleXXX() methods)
+* java.lang.reflect.Method#invoke()
