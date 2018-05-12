@@ -30,3 +30,47 @@ that make up the object. This provides more control over the object construction
 * java.nio.ByteBuffer#put()(also on CharBuffer,ShortBuffer,IntBuffer,LongBuffer,FloatBuffer and DoubleBuffer) 
 * javax.swing.GroupLayout.Group#addComponent()
 * All implementations of java.lang.Appendable
+
+## Factory Method Design Pattern
+The Factory Method pattern gives us a way to encapsulate the instantiations of concrete types.
+The Factory Method pattern encapsulates the functionality required to select and instantiate an appropriate
+class, inside a designated method referred to as a factory method.
+
+### When to use Factory Method Design Pattern
+* A class can't anticipate the class of objects it must create
+* A class want its subclasses to specify the objects it creates.
+* Classes delegate responsibility to one of several helper subclasses, and you want to locate the knowledge
+    of which helper subclass is  the delegate.
+
+### Factory Method Pattern is JDK
+* java.util.Calendar#getInstance()
+* java.util.ResourceBundle#getBundle()
+* java.text.NumberFormat#getInstance()
+* java.nio.charset.Charset#forName()
+* java.net.URLStreamHandlerFactory#createURLStreamHandler(String) (Returns singleton object per protocol)
+
+## Abstract Factory Method Design Pattern
+The Abstract Factory(a.k.a. Kit) provides an interface for creating families of related or dependent
+objects without specifying their concrete classes.
+
+The Abstract Factory pattern is useful when a client object want to create instance of one of a suite
+ of related, dependent classes without having to know which specific concrete class is to be instantiated.
+ 
+The Abstract Factory pattern is also useful for plugging in a different group of objects to alter the behaviour
+of the system.
+
+### When to use Abstract Factory Design Pattern
+* A system should be independent of how its products are created, composed and represented
+* A system should be configured with one of multiple families of products
+* A family of related product objects is designed to be used together, and you need to enforce this constraint
+* You want to provide a class library of products, and you wan to reveal just their interfaces, not their implementation
+
+### Abstract Factory Pattern in JDK
+* java.util.Calendar#getInstance()
+* java.util.Arrays#asList()
+* java.util.ResourceBundle#getBundle()
+* java.sql.DriverManager#getConnection()
+* java.sql.Connection#createStatement()
+* java.sql.Statement#executeQuery()
+* java.text.NumberFormat#getInstance()
+* javax.xml.transform.TransformerFactory#newInstance()
