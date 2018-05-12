@@ -76,3 +76,29 @@ internal state so that the object can be restored to this state later.
 ### Memento Pattern in JDK
 * java.util.Date
 * java.io.Serializable
+
+## Template Design Pattern
+The Template Design Patter, as the name suggests, provides a template or a structure of an algorithm
+which is used by user. A user provides its own implementation without changing the algorithm's structure.
+
+The Template Pattern defines the skeleton of an algorithm in an operation, deferring some steps to subclasses.
+Template Method lets subclasses to redefine certain steps of an algorithm without changing its structure.
+
+The Template class does not necessarily have to leave the implementation to subclasses in its entirety.
+Instead, as part of providing the outline of the algorithm, the Template class can also provide some amount
+of implementation that can be considered as invariant across different implementations. It can even provide
+default implementation for the variant parts, if appropriate.
+
+### When to use the Template Design Pattern
+* To implement the invariant parts of an algorithm core and leave it to subclasses to implement the behavior that can vary.
+* When common behavior among subclasses should be factored and localized ina common class to avoid duplication. You 
+    first identify the differences in the existing code and then separate the differences into new operations. Finally, 
+    you replace the differing code with a template method that calls one of these new operations.
+* To control subclasses extensions. You can define a template method that calls "hook" operations as specific points,
+    thereby permitting extensions only at those points.
+    
+### Template Pattern in JDK
+* java.util.Collections#sort()
+* java.io.InputStream#skip()
+* java.io.InputStream#read()
+* java.util.AbstractList#indexOf()
