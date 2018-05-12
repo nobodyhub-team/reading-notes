@@ -61,3 +61,18 @@ The handler should be ascertained automatically.
 ### Chain of Responsibility in JDK
 * java.util.logging.Logger#log() 
 * javax.servlet.Filter#doFilter()
+
+## Memento Design Pattern
+Sometimes it's necessary to record the internal state of an object. This is required when implementing
+checkpoints and "undo" mechanisms that let uses back out of tentative operations or recover from errors.
+
+The Memento Pattern's intent is, without violating encapsulation, to capture and externalize an object's
+internal state so that the object can be restored to this state later.
+
+### When to use Memento Design Pattern
+* A snapshot of(some portion of) an object's stats must be saved so that it can be restored to that state later
+* A direct interface to obtaining the state would expose implementation details and break the object's encapsulation.
+
+### Memento Pattern in JDK
+* java.util.Date
+* java.io.Serializable
