@@ -74,3 +74,22 @@ of the system.
 * java.sql.Statement#executeQuery()
 * java.text.NumberFormat#getInstance()
 * javax.xml.transform.TransformerFactory#newInstance()
+
+## Prototype Design Pattern
+The Prototype Design Pattern is used to specify the kinds of objects to create using a prototypical
+instance, and create new objects by copying this prototype.
+
+The concept is to copy an existing object rather than a new instance from scratch, something that may
+include costly operations. The existing object acts as a prototype and contains the state of the object.
+The newly copied object may change some properties only if required.
+
+### When to use Prototype Design Pattern
+* When the classes to instantiate are specified at run-time, for example, dynamic loading
+* To avoid building a class hierarchy of factories that parallels the class hierarchy of products
+* When instances of a class can have one of only a few different combinations of stats. It may be
+more convenient to install a corresponding number of prototypes and clone them rather than instantiating
+the class manually, each time with the appropriate state.
+
+### Prototype Pattern in JDK
+* java.lang.Object#clone() 
+* java.lang.Cloneable
