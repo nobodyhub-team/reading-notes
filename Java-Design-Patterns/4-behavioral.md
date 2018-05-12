@@ -102,3 +102,23 @@ default implementation for the variant parts, if appropriate.
 * java.io.InputStream#skip()
 * java.io.InputStream#read()
 * java.util.AbstractList#indexOf()
+
+## State Design Pattern
+The State Design Pattern allows an object to alter its behavior when its internal state changes.
+THe object will appear to change its class.
+
+The state of an object can be defined as its exact condition at any given point of time, depending on the values
+of its properties or attributes. The set of methods implemented by a class constitutes the behaviors of its instances.
+
+The State pattern is useful in designing an efficient structure for a class, a typical instance of which
+can exist in many different states and exhibit different behavior depending on the state it is in.
+
+### When to use the State Design Patten
+* An object's behavior depends on its state, and it must change its behavior at run-time depending on that state.
+* Operations have large, multipart conditional statements that depend on the object's state. This state is usually 
+    represented by one or more enumerated constants. Often, several operations will contain this same conditional structure.
+    The State pattern puts each branch of the conditional in a separate class. This lets yo treat object's state
+    as an object in its own right that can very independently from other object.
+    
+### State Design in JDK
+* javax.faces.lifecycle.LifeCycle#execute()
