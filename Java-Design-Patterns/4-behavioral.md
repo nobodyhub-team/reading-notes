@@ -38,3 +38,26 @@ Rather than interacting directly with each other, objects ask the Mediator to in
 * java.util.concurrent.ExecutorService (the invokeXXX() and submit() methods) • java.util.concurrent.Executor#execute()
 * java.util.Timer (all scheduleXXX() methods)
 * java.lang.reflect.Method#invoke()
+
+## Chain of Responsibility Design Pattern
+In the Chain of Responsibility pattern, a group of objects is chained together in a sequence and a
+responsibility(a request) is provided in order to be handled by the group. If an object in the group
+can process the particular request, it does so and returns the corresponding response. Otherwise, it 
+forwards the request to the subsequent object in the group.
+
+The intent of this pattern is to avoid coupling the sender of a request to its receiver by giving more than
+one object a chance to handle the request. We chain the receiving objects and pass the request along the 
+chain until an object handles it.
+
+When there is more than one objects that can handle or fulfill a client request, the pattern recommends
+ giving each of these objects a change to process the request in some sequential order.
+
+### When to use the Chain of Responsibility Pattern
+* More than one objects may handle a request, and the handler isn’t known a priori. 
+The handler should be ascertained automatically.
+* You want to issue a request to one of several objects without specifying the receiver explicitly.
+* The set of objects that can handle a request should be specified dynamically.
+
+### Chain of Responsibility in JDK
+* java.util.logging.Logger#log() 
+* javax.servlet.Filter#doFilter()
