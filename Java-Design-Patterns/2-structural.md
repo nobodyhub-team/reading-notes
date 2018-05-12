@@ -87,3 +87,25 @@ especially when objects should have different access rights.
 ### Proxy Pattern in JDK
 * java.lang.reflect.Proxy
 * java.rmi.* (whole package)
+
+## Flyweight Design Pattern
+The Flyweight Pattern is design to control similar and heavy object and provides you with a basic
+caching mechanism. It allows you to create on object per type, and if you ask for na object with the 
+same property, it will return you the same object instead of creating a new one.
+
+The intent of the Flyweight Pattern is used to share objects to support large numbers of fine-grained
+objects efficiently. A flyweight is a shared object that can be used in multiple contexts simultaneously.
+The flyweight acts as an independent object in each context. Flyweight can not make assumptions about
+the context in which they operate. The key concept here is the distinction between intrinsic and extrinsic
+state.
+
+### When to use the Flyweight Pattern
+* An application uses a large number of objects
+* Storage costs are high because of the sheer quantity of objects
+* Most object state can be made extrinsic
+* Many groups of objects may be replaced by relatively few shared objects once extrinsic status is removed.
+* The application does not depend on object identity. Since flyweight objects may be shared, identity
+    tests will return tru for conceptually distinct objects.
+    
+### Flyweight in the JDK
+* java.lang.Integer#valueOf(int) (also on Boolean, Byte, Character, Short and Long)
