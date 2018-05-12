@@ -122,3 +122,24 @@ can exist in many different states and exhibit different behavior depending on t
     
 ### State Design in JDK
 * javax.faces.lifecycle.LifeCycle#execute()
+
+## Strategy Design Pattern
+The Strategy Design Pattern defines a family of algorithm, encapsulating each other, and making them interchangeable.
+Strategy lets the algorithm vary independently from the clients that use it.
+
+The Strategy pattern is useful when there is a set of related algorithms and a client object needs 
+to be able to dynamically pick and choose an algorithm from this set that suits its current need. 
+The Strategy pattern suggests keeping the implementation of each of the algorithms in a separate class. 
+
+### When to use the Strategy Design Pattern
+* Many related classes differ only in their behavior. Strategies provides a way to configure a class with one of many behavior;
+* You need different variants of an algorithm
+* An algorithm uses data that clients should not know about. Use the Strategy pattern to avoid exposing complex,
+    algorithm-specific data structure.
+* A class defines man behaviors, and these appear as multiple conditional statements in its operations. 
+    Instead of many conditionals, move related conditional branches into their own Strategy class.
+    
+### Strategy Pattern in JDK
+* java.util.Comparator#compare() 
+* javax.servlet.http.HttpServlet 
+* javax.servlet.Filter#doFilter()
