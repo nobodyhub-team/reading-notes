@@ -40,5 +40,3 @@ In general, a pattern has four essential elements:
 |-|-|[Strategy](4-behavioral.md#strategy-design-pattern)|
 |-|-|[Template](4-behavioral.md#template-design-pattern)|
 |-|-|[Visitor](4-behavioral.md#visitor-design-pattern)|
-
-[Home](README.md), [Next](2-structural.md)
