@@ -168,3 +168,26 @@ as it invokes operations on different objects. The Command pattern suggests crea
 ### Command Design Pattern in JDK
 * java.lang.Runnable 
 * javax.swing.Action
+
+## Interpreter Design Pattern
+The Interpreter Design Pattern is a heavy-duty pattern. It' s all about putting together your own 
+programming language, or handling an existing one, by creating an interpreter for that language. Giving
+ a language, define a representation for its grammar along with an interpreter that uses the representation
+ to interpret sentences in the language.
+ 
+In such cases, instead of treating every distinct combination of rules as a separate case, it may
+be beneficial for the application to have the ability to interpret a generic combination of rules.
+A class hierarchy can be designated to represent the set of grammar rules with every class in the
+hierarchy representing a separate grammar rule. An interpreter module can be designed to interpret 
+the sentences constructed using the class hierarchy designed above and carries out the necessaries operations.  
+
+### When to use the Interpreter Design Pattern
+* The grammar is simple. For complex grammars, the class hierarchy fo the grammar becomes large and
+    unmanageable. Tools such as parser generator are a better alternative in such cases.
+* Efficiency is not a critical concern. The most efficient interpreters are usually not implemented by 
+    interpreting parse trees directly but by first translating them into another form.
+    
+### Interpreter Design Pattern in JDK
+* java.util.Pattern
+* java.text.Normalizer 
+* java.text.Format
