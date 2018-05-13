@@ -13,7 +13,7 @@
 * There are several existing subclasses to be use, but it's impractical to adapt their interface by
     subclassing every one. An object adaptor can adapt the interface of its parent class. 
     
-## Facade/fəˈsɑːd/ Pattern
+## Facade Design Pattern
 The Facade Pattern makes a complex interface easier to use, using a Facade class.
 The Facade Pattern provides a unified interface to a set of interface in a subsystem.
 Facade Pattern defines a higher-level interface that makes the subsystem easier to use.
@@ -133,25 +133,3 @@ by sending messages to an appropriate decorator.
 * java.io.BufferedOutputStream(OutputStream)
 * java.util.zip.ZipOutputStream(OutputStream)
 * java.util.Collections#checked()(List|Map|Set|SortedSet|SortedMap)
-
-## Visitor Design Pattern
-The intent of the Visitor Design Pattern is to represent an operation to be performed on the elements
-of an object structure. Visitor lets you define a new operation without changing the classes of the elements
-on which it operates.
-To accomplish this, the Visitor pattern suggests defining the operation in separate class referred to as a visitor
-class. This separates the operation from the object collection that it operates on.
-
-### When to use Visitor Design Pattern
-* An object structure contains many classes of objects with differing interfaces, and you want to  perform operations
-    on these objects that depend on their concrete classes.
-* Many distinct and unrelated operations need to be performed on objects in an object structure, and 
-    you want to avoid "polluting" their classes with these operations. Visitor lets you keep related
-    operations together by defining them in one class. When the object structure is shared by many applications,
-    use Visitor to put operations in jus those applications that need them.
-* The classes defining the object structure rarely change, but you often want to define new operation over the
-    structure. Changing the object structure classes requires redefining the interface to all visitors,
-    which is potentially costly.
-
-### Visitor Design Pattern in JDK
-* javax.lang.model.element.Element and javax.lang.model.element.ElementVisitor 
-* javax.lang.model.type.TypeMirror and javax.lang.model.type.TypeVisitor
