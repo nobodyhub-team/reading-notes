@@ -109,3 +109,27 @@ state.
     
 ### Flyweight in the JDK
 * java.lang.Integer#valueOf(int) (also on Boolean, Byte, Character, Short and Long)
+
+## Decorator Design Pattern
+The intent of the Decorator Design Pattern is to attach additional responsibilities to an object dynamically.
+Decorators provide a flexible alternative to sub-classing for extending functionality. This is accomplished
+ by creating object wrapper referred to as a Decorator around the actual object.
+
+Decorators prevent the proliferation of subclasses leading to less complexity and confusion. It is easy
+to add any combination of capabilities. The sam capability can even be added twice. It becomes possible to have
+different decorator objects for a given object simultaneously. A client can choose what capacities it wants
+by sending messages to an appropriate decorator.
+ 
+### When to use the Decorator Design Pattern
+* To add responsibilities to individual objects dynamically and transparently, that is, without affecting other objects
+* For responsibilities that can be withdrawn.
+* When extension by sub-classing is impractical. Sometimes a large number of independent extensions are possible
+     and would produce an explosion of subclasses to support every combination. OR a class definition may be hidden
+     or otherwise unavailable for sub-classing.
+        
+### Decorator Design Pattern in JDK
+* java.io.BufferedInputStream(InputStream)
+* java.io.DataInputStream(InputStream)
+* java.io.BufferedOutputStream(OutputStream)
+* java.util.zip.ZipOutputStream(OutputStream)
+* java.util.Collections#checked()(List|Map|Set|SortedSet|SortedMap)

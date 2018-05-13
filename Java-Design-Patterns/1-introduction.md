@@ -41,4 +41,4 @@ In general, a pattern has four essential elements:
 |-|-|Template Method|
 |-|-|Visitor|
 
-[Home](README.md), [Next](2-adapter.md)
+[Home](README.md), [Next](2-structural.md)
