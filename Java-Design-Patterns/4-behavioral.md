@@ -191,3 +191,18 @@ the sentences constructed using the class hierarchy designed above and carries o
 * java.util.Pattern
 * java.text.Normalizer 
 * java.text.Format
+
+## Iterator Design Pattern
+The intent of the Iterator Design Pattern is to provide a way to access the elements of an aggregate
+object sequentially without exposing its underlying representation. The Iterator pattern allows a client
+object to access the contents of a container in a sequential manner, without having any knowledge about the internal
+representation of its contents.
+
+### When to use Iterator Design Pattern
+* To access an aggregate object's contents without exposing its internal representation
+* To support multiple traversals of aggregate objects.
+* To provide a uniform interface for traversing different aggregate structures.
+
+### Iterator Pattern in JDK
+* java.util.Iterator
+* java.util.Enumeration
