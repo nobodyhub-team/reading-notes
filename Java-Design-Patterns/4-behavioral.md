@@ -143,3 +143,28 @@ The Strategy pattern suggests keeping the implementation of each of the algorith
 * java.util.Comparator#compare() 
 * javax.servlet.http.HttpServlet 
 * javax.servlet.Filter#doFilter()
+
+## Command Design Pattern
+The Command pattern would help to decouple the invoker from a receiver and helps to execute any type of
+job without knowing its implementation.
+The intent of the Command Design Pattern is to encapsulate a request as an object, thereby letting the
+developer to parameterize clients with different requests, queue or log requests, and support undoable operations.
+
+In terms of implementation, the application may depend on a designated object that invokes methods on these objects
+by passing the required data as arguments. The designated object can be referred to as an invoker 
+as it invokes operations on different objects. The Command pattern suggests creating an abstraction
+ for the processing to be carried out or the action to be taken in response to client requests.
+ 
+### When to use the Command Design Pattern
+* Parameterize objects by an action to perform
+* Specify, queue, and execute requests at different times. A Command object can have a lifetime     
+    independent of the original request. If the receiver of a request can be represented in an 
+    address space-independent way, then you can transfer a command object for the request to a 
+    different process and fulfill the request there.
+* Support undo. The Command's execute operation can store state for reversing its effects in the command itself.
+* Support logging changes so that they can be reapplied in case of a system crash.
+* Structure a system around high-level operations built on primitives operations.
+
+### Command Design Pattern in JDK
+* java.lang.Runnable 
+* javax.swing.Action
